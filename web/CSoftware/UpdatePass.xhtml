@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>Cambio Contraseña</title>
+            </f:facet>
+        </h:head>
+        <h:body>
+            <table align="center">
+                <tr><th  colspan="2" align="center">Cambio Contraseña</th></tr> 
+                <tr><td><h:outputText value="Constraseña Anterior: "/> </td><td> <p:password required="true" value="#{up.oldp}"/></td></tr>
+                <tr><td><h:outputText value="Nueva Constraseña: "/> </td><td> <p:password required="true" value="#{up.newP}"/></td></tr>
+                <tr><td><h:outputText value="Nueva Constraseña: "/> </td><td> <p:password required="true" /></td></tr>
+                <tr ><td colspan="2" align="center"><p:commandButton value="Aceptar"/></td></tr>
+            </table>
+        </h:body>
+    </f:view>
+</html>

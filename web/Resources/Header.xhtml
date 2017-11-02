@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <h3 style="margin-top:0">Buttons</h3>
+        <p:commandButton value="Edit" icon="fa fa-fw fa-edit" type="button"/>
+        <p:commandButton value="Remove" icon="fa fa-fw fa-remove" type="button"/>
+        <p:commandButton value="Download" icon="fa fa-fw fa-download" type="button"/>
+
+        <h3>Menu</h3>
+        <p:menu>
+            <p:submenu label="Document">
+                <p:menuitem value="New" url="#" icon="fa fa-plus" />
+                <p:menuitem value="Refresh" url="#" icon="fa fa-refresh"/>
+            </p:submenu>
+            <p:submenu label="Navigations">
+                <p:menuitem value="Home" url="http://www.primefaces.org" icon="fa fa-home"/>
+                <p:menuitem value="User" url="#" icon="fa fa-user"/>
+            </p:submenu>
+        </p:menu>
+    </body>
+</html>
